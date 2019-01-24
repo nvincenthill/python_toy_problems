@@ -23,3 +23,6 @@ print(expanded_form(3) == '3')
 print(expanded_form(12) == '10 + 2')
 print(expanded_form(42) == '40 + 2')
 print(expanded_form(70304) == '70000 + 300 + 4')
+
+# recursive solution fails due to maximum recursion depth exceeded
+print(expanded_form(4982342))
