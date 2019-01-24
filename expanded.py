@@ -21,7 +21,8 @@ def expanded_form(num):
             return result + str(num)
         else:
             base = int(round_down(num, 10 ** (len(stringified) - 1)))
-            result = result + str(base) + " + "
+            next_piece = result + str(base)
+            result = next_piece + " + " if num - base != 0 else next_piece
             num = num - base
 
 
@@ -29,4 +30,4 @@ print(expanded_form(3) == '3')
 print(expanded_form(12) == '10 + 2')
 print(expanded_form(42) == '40 + 2')
 print(expanded_form(70304) == '70000 + 300 + 4')
-# print(expanded_form(4982342))
+# print(expanded_form(9000000))
