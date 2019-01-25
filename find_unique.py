@@ -7,16 +7,10 @@
 
 
 def find_uniq(arr):
-    tally = {}
-    for i in range(0, len(arr)):
-        if arr[i] in tally:
-            tally[arr[i]] = False
-        else:
-            tally[arr[i]] = True
-    for key in tally:
-        if tally[key]:
-            return key
-    return False
+    s = set(arr)
+    for e in s:
+        if arr.count(e) == 1:
+            return e
 
 # tests
 
