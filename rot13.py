@@ -18,6 +18,7 @@ def rot13(message):
         ciphered += alphabet[new_index] if is_uppercase else alphabet[new_index].upper()
     return ciphered
 
+# tests
 
-print(rot13("test") == "grfg")
-print(rot13("Test") == "Grfg")
+# print(rot13("test") == "grfg")
+# print(rot13("Test") == "Grfg")
