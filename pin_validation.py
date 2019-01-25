@@ -6,6 +6,7 @@ def validate_pin(pin):
 
 # tests
 
+# example
 
 # print(validate_pin('4235') == True)
 # print(validate_pin('242492') == True)
