@@ -7,14 +7,10 @@
 
 
 def comp(array1, array2):
-    is_same = True
-    sorted_array_one = array1.sort()
-    sorted_array_two = array2.sort()
-    for i in sorted_array_one:
-        if sorted_array_one[i] ** 2 != sorted_array_two[i]:
-            is_same = False
-            break
-    return is_same
+    try:
+        return sorted([i ** 2 for i in array1]) == sorted(array2)
+    except:
+        return False
 
 # tests
 
